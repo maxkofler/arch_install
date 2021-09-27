@@ -1,0 +1,10 @@
+[Unit]
+Description=OpenVPN onnect
+
+[Service]
+User=root
+WorkingDirectory=/root/
+ExecStart=/usr/sbin/openvpn /root/OpenVPN.ovpn
+
+[Install]
+WantedBy=multi-user.target
