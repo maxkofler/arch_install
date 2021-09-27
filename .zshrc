@@ -129,13 +129,16 @@ alias syncp='sudo pacman -Sy'
 alias key_server="eval\"$(ssh-agent)\" && ssh-add ~/ssh-keys/server/server"
 alias key_github="eval\"$(ssh-agent)\" && ssh-add ~/ssh-keys/github/gitkey"
 
-alias gaa=git add .
-alias ga=git add
-alias gc=git commit
-alias gcm=git commit -m
-alias gps=git push
-alias gpu=git pull
-alias gs=git status
+alias gaa="git add ."
+alias ga="git add"
+alias gc="git commit"
+alias gch="git checkout"
+alias gcm="git commit -m"
+alias gps="git push"
+alias gpu="git pull"
+alias gs="git status"
+
+alias please="sudo !!"
 
 #
 # Systemd (systemctl)

@@ -1,0 +1,10 @@
+[Unit]
+Description=optimus_manager kernel mode select
+
+[Service]
+User=root
+WorkingDirectory=/root/
+ExecStart=/usr/bin/bash /opt/scripts/optimus_boot.sh
+
+[Install]
+WantedBy=multi-user.target
