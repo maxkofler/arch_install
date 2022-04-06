@@ -21,7 +21,7 @@ makepkg -si
 echo "yay built!"
 
 echo "Installing required packages.."
-yay -Sy sway nordic-theme i3status nerd-fonts-jetbrains-mono ttf-jetbrains-mono rofi-lbonn-wayland-git nautilus gthumb qt5-styleplugins qt5ct kwayland 
+yay -Sy alacritty zsh sway nordic-theme i3status nerd-fonts-jetbrains-mono ttf-jetbrains-mono rofi-lbonn-wayland-git nautilus gthumb qt5-styleplugins qt5ct kwayland 
 
 echo "Installed packages.."
 

@@ -63,7 +63,7 @@ gaps inner 4
 gaps outer 1
 
 # set same wallpaper to all displays in fill mode
-output * bg ~/.wallpaper/wallpaper.jpg fill
+#output * bg ~/.wallpaper/wallpaper.jpg fill
 
 exec gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
 exec gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
