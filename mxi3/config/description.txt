@@ -1,0 +1,9 @@
+ alacritty -> Terminal Emulator
+ dunst -> Notification daemon
+ gtk-2.0 && gtk-3.0 -> GTK App Theming
+ i3 -> WM
+ i3blocks -> Status bar tool
+ i3status -> Status bar
+ nitrogen -> Wallpaper tool
+ nvim -> best editor lol
+ rofi -> app launcher
