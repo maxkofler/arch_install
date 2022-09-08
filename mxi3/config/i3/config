@@ -19,9 +19,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager
 # exec --no-startup-id nm-applet
 
-#launch btc price parser
-exec --no-startup-id bash /home/zimsneexh/.bin/btc.sh
-
 # start polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
@@ -33,10 +30,16 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+t exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+X kill
 
 # start rofi
 bindsym $mod+d exec --no-startup-id rofi -show drun
+
+# start nautilus
+bindsym $mod+e exec nautilus
+
+# start firefox
+bindsym $mod+f exec firefox
 
 #################################################################
 # default bindings on focus and windows
@@ -73,7 +76,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+c fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+s layout stacking
