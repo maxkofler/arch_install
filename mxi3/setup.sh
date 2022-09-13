@@ -19,7 +19,7 @@ echo "Running in $CURDIR"
 echo "[setup] Installing packages..."
 
 yay -Sy
-yay -S alacritty dunst i3-gaps-rounded-git i3blocks i3status nitrogen neovim rofi nautilus neofetch polkit-gnome nerd-fonts-jetbrains-mono ttf-jetbrains-mono alacritty-themes lightdm lightdm-gtk-greeter lxappearance nordic-theme
+yay -S alacritty dunst i3-gaps-rounded-git i3blocks i3status i3lock-color nitrogen neovim rofi nautilus neofetch polkit-gnome nerd-fonts-jetbrains-mono ttf-jetbrains-mono alacritty-themes lightdm lightdm-gtk-greeter lxappearance nordic-theme imagemagick evince eog vimpager polybar totem spectacle
 
 echo "[setup] Installing vimplug (in nvim: 'PlugInstall'"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

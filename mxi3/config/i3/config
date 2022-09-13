@@ -41,15 +41,21 @@ bindsym $mod+e exec nautilus
 # start firefox
 bindsym $mod+f exec firefox
 
+# take a screenshot
+bindsym $mod+s exec spectacle
+
+# Lock the screen
+bindsym $mod+l exec "i3lock --blur=1"
+
 #################################################################
 # default bindings on focus and windows
 #################################################################
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+ntilde focus right
+#bindsym $mod+j focus left
+#bindsym $mod+k focus down
+#bindsym $mod+l focus up
+#bindsym $mod+ntilde focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
