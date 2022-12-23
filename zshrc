@@ -93,9 +93,9 @@ alias chgrp='chgrp --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chown='chown --preserve-root'
 
-alias rm='rm -I'
-alias mv='mv -i'
-alias cp='cp -i'
+alias rm='rm -f'
+alias mv='mv -f'
+alias cp='cp -f'
 alias df='df -h'
 alias size='du -hs'
 
@@ -133,6 +133,7 @@ alias gaa="git add ."
 alias ga="git add"
 alias gc="git commit"
 alias gch="git checkout"
+alias gbr="git branch"
 alias gcm="git commit -m"
 alias gps="git push"
 alias gpu="git pull"
