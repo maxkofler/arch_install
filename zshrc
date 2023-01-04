@@ -129,8 +129,14 @@ alias syncp='sudo pacman -Sy'
 alias key_server="eval\"$(ssh-agent)\" && ssh-add ~/ssh-keys/server/server"
 alias key_github="eval\"$(ssh-agent)\" && ssh-add ~/ssh-keys/github/gitkey"
 
+#
+# git commands
+#
+
 alias gaa="git add ."
+alias gaap="git add -p ."
 alias ga="git add"
+alias gap="git add -p"
 alias gc="git commit"
 alias gch="git checkout"
 alias gbr="git branch"
@@ -138,6 +144,10 @@ alias gcm="git commit -m"
 alias gps="git push"
 alias gpu="git pull"
 alias gs="git status"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gst="git stash"
+alias gstp="git stash pop"
 
 alias please="sudo !!"
 
