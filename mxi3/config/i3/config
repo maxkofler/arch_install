@@ -48,7 +48,12 @@ bindsym $mod+f exec firefox
 bindsym $mod+shift+s exec spectacle
 
 # Lock the screen
-bindsym $mod+l exec "i3lock --blur=5"
+bindsym XF86PowerOff exec ~/.config/i3/lock
+
+# Media controls
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 #################################################################
 # default bindings on focus and windows
@@ -150,6 +155,11 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 bindsym $mod+XF86MonBrightnessUp exec brightnessctl -d kbd_backlight s +10%
 bindsym $mod+XF86MonBrightnessDown exec brightnessctl -d kbd_backlight s 10%-
 
+# Audio
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -223,9 +233,10 @@ border_radius 5
 #gaps outer 15
 default_border pixel 1
 
+exec xset -dpms s off
+exec setxkbmap de
+    
 exec xinput set-prop $(xinput list | grep -i "Trackpad" | grep "pointer" | cut -d'=' -f2 | cut -d'[' -f1) $(xinput list-props $(xinput list | grep -i "Trackpad" | grep "pointer" | cut -d'=' -f2 | cut -d'[' -f1) | grep -i "Natural Scrolling Enabled (" | cut -d'(' -f2 | cut -d')' -f1) 0
 
 exec xinput set-prop $(xinput list | grep -i "Trackpad" | grep "pointer" | cut -d'=' -f2 | cut -d'[' -f1) $(xinput list-props $(xinput list | grep -i "Trackpad" | grep "pointer" | cut -d'=' -f2 | cut -d'[' -f1) | grep -i "Disable While Typing Enabled (" | cut -d'(' -f2 | cut -d')' -f1) 0
 
-exec xset -dpms s off
-exec setxkbmap de
